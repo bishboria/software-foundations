@@ -434,8 +434,10 @@ Proof. reflexivity. Qed.
 (* Write a simple fixpoint function on numbers that does terminate on all inputs
    but Coq won't accept because a term isn't decreasing
 *)
+(*
 Fixpoint not_zero (n:nat) : nat :=
   match n with
     | O    => not_zero (S n) (* increases *)
     | S n' => S n'           (* returns same thing *)
   end.
+*)
