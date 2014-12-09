@@ -569,7 +569,7 @@ Fixpoint forallb {X:Type} (f:X -> bool) (l:list X) : bool :=
 
 Eval compute in forallb oddb [1;3;5;7;9] = true.
 Eval compute in forallb negb [false;false] = true.
-Eval compute in forallb evenb [0;2;4;5] = true.
+Eval compute in forallb evenb [0;2;4;5] = false.
 Eval compute in forallb (beq_nat 5) [] = true.
 
 Fixpoint existsb {X:Type} (f:X -> bool) (l:list X) : bool :=
