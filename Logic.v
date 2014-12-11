@@ -1,7 +1,6 @@
 (* Chapter 6 Logic *)
 
-Require Export MoreCoq.
-Require Import Basics.
+Require Export MoreCoq Basics.
 
 (* Propositions *)
 Check 3 = 3.
