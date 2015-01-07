@@ -690,6 +690,7 @@ Tactic Notation "com_cases" tactic(first) ident(c) :=
   first;
   [ Case_aux c "SKIP"
   | Case_aux c "::="
+  | Case_aux c ";;"
   | Case_aux c "IFB"
   | Case_aux c "WHILE"
   ].
